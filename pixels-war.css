@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid {
+    margin: 30px 0;
+    display: grid;
+    /* remplacé par js */
+    grid-template-columns: repeat(10, 15px);
+    grid-template-rows: repeat(10, 15px);
+}
+
+#grid > div {
+    width: 4px;
+    height: 4px;
+    margin: 0px;
+    cursor: pointer;
+    border: 0.2px solid #ccc;
+}
+
+#grid > div:hover {
+    outline: 1px solid red;
+}
+
+#connect-dialog {
+    margin-top: 1em;
+}
+
+#connect-dialog > * {
+    margin: 1em 2em;
+    background-color: rgb(200, 240, 213);
+    padding: 10px 20px;
+    border-radius: 0.5em;
+}
+
+#connect-dialog :first-child > input {
+    width: 40ex;
+}
+
+#controls {
+    margin-bottom: 1em;
+}
